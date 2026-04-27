@@ -84,7 +84,8 @@ Connections are made via Pmod headers. Ensure the wiring matches the physical pi
 1. Install the **RF24 library** by TMRh20 via the Library Manager (`Ctrl+Shift+I`).
 2. Open `firmware_master/src/transmitter.ino`.
 3. Select your board and port, then click **Upload**.
-   - *Note:* The code is set to Channel `76`, `1MBPS` speed, and `Auto-Ack` is disabled for low latency.
+
+*Note:* The code is set to Channel `76`, `1MBPS` speed, and `Auto-Ack` is disabled for low latency.
 
 ### Slave (Xilinx Vivado)
 1. Open Vivado and create a new **RTL Project** for the **Arty Z7-20**.
@@ -93,7 +94,7 @@ Connections are made via Pmod headers. Ensure the wiring matches the physical pi
 4. In the Project Manager, ensure `Receiver_Top.v` is set as the **Top Module**.
 5. Run **Run Synthesis**, **Run Implementation** and **Generate Bitstream** and program the FPGA.
 
-*Note: If you do not see the Arty Z7-20 board in the selection list, you must install the **Digilent Vivado Board Files**. Follow the official instructions on the [Digilent Vivado Boards GitHub repository](https://github.com/Digilent/vivado-boards).*
+*Note: If you do not see the Arty Z7-20 board in the selection list, you must install the **Digilent Vivado Board Files**. Follow the official instructions on the [Digilent Vivado Boards](https://github.com/Digilent/vivado-boards).*
 
 ---
 
